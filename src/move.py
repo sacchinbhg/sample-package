@@ -43,7 +43,6 @@ def rotate(angle):
     time=rospy.Time.now().to_sec()
 
     while(curr_angle<angle):
-        print("hi")
         v.publish(temp)
         time1=rospy.Time.now().to_sec()
         curr_angle=100*(time1-time)
